@@ -1,10 +1,5 @@
 const friendNames = (a) => {
-    const names = [];
-    for (const name of a){
-        if(name.length % 2 === 0){
-            names.push(name)
-        }
-    }
+    const names = a.filter((n) => n.length % 2 == 0);
     return names;
 }
 
